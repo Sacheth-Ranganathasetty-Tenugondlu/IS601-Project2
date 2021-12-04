@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <title>AAA Testing</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    /* Timeline */
+
+    <div class="container">
+
+                            /* Set a background color */
+
+                          </div>
+  </style>
+
+</head>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+<!-- Header -->
+
+<nav class="navbar navbar-expand-lg navbar-light .bg-light" style= "background-color: #e3f2fd;">
+  <div class="container-fluid">
+    <h3 class ="display-2">IS 601</h3>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link lead" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link lead" href="Team_Page.html">Team Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link lead" href="#">About Page</a>
+        </li>
+        <li class="nav-item dropdown lead">
+          <a class="nav-link dropdown-toggle lead" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Internet History
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item lead" href="Video_1.html">Invention of Internet</a></li>
+            <li><a class="dropdown-item lead" href="Video_2.html">Browser Wars</a></li>
+            <li><a class="dropdown-item lead" href="Video_3.html">Internet search</a></li>
+            <li><a class="dropdown-item lead" href="Video_4.html">Dot Com Bubble</a></li>
+            <li><a class="dropdown-item lead" href="Video_5.html">People</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown lead">
+          <a class="nav-link dropdown-toggle lead" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            OOPs
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item lead" href="OOP.html">Pylint & OOP Glossary</a></li>
+            <li><a class="dropdown-item lead" href="AAAtest.html">AAA Testing</a></li>
+            <li><a class="dropdown-item lead" href="Principles.html">Principles of OOP</a></li>
+            <li><a class="dropdown-item lead" href="SOC.html">Separation of Concerns</a></li>
+
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Body -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-7">
+      <div class="mt-4"></div>
+      <h2>What is AAA Testing?</h2>
+      <p>
+        • A test is a procedure that exercises a behavior to determine if the behavior functions correctly. There are several different kinds of tests, like unit tests, integration tests, or end-to-end tests, but all functional tests do the same basic thing: they try something and report PASS or FAIL.
+      </p>
+
+      <p>   • Testing provides an empirical feedback loop for development. That’s how testing keeps us safe. With tests, we know when things break. Without tests, coding can be dangerous. We don’t want to deploy big ol’ bugs! </p>
+
+      <p>    • So, if we intend to spend time writing tests, how can we write good tests? There’s a simple but powerful pattern I like to follow: Arrange-Act-Assert. </p>
+
+      </p>
+      <h2>Why is AAA Testing Important?</h2>
+      <p>Unit testing ensures that all code meets quality standards before it's deployed. This ensures a reliable engineering environment where quality is paramount. Over the course of the product development life cycle, unit testing saves time and money, and helps developers write better code, more efficiently.</p>
+    </div>
+  </div><br><br>
+  <div class="text-center">
+    <img src="./img/aaa1.png" height="300" width="350" alt="pic1">
+  </div>
+</div>
+<div class="container">
+  <div class="col-sm-7">
+    <div class="mt-4"></div>
+    <h2>AAA Testing's order of operations</h2>
+
+    <h3>Step 1:</h3>
+    <p>
+      •Arrange inputs and targets. Arrange steps should set up the test case. Does the test require any objects or special settings? Does it need to prep a database? Does it need to log into a web app? Handle all of these operations at the start of the test.
+
+    </p>
+    <h3>Step 2:</h3>
+    <p>
+      •Act on the target behavior. Act steps should cover the main thing to be tested. This could be calling a function or method, calling a REST API, or interacting with a web page. Keep actions focused on the target behavior.
+    </p>
+    <h3>Step 3:</h3>
+    <p>
+      •Assert expected outcomes. Act steps should elicit some sort of response. Assert steps verify the goodness or badness of that response. Sometimes, assertions are as simple as checking numeric or string values. Other times, they may require checking multiple facets of a system. Assertions will ultimately determine if the test passes or fails. Every major programming language has at least one test framework. Frameworks like JUnit, NUnit, Cucumber, and (my favorite) pytest enable you, as the programmer, to automate tests, execute suites, and report results. However, the framework itself doesn’t make a test case “good” or “bad.” You, as the tester, must know how to write good tests. Arrange-Act-Assert is powerful because it is simple. It forces tests to focus on independent, individual behaviors. It separates setup actions from the main actions. It requires test to make verifications and not merely run through motions. Notice how the pattern is not Arrange-Act-Assert-Act-Assert – subsequent actions and assertions belong in separate tests! Arrange-Act-Assert is a great pattern to follow for writing good functional tests.
+    </p><br><br>
+    <div class="col-sm-3">
+      <img src="./img/aaa2.jpg" width="500" height="400" alt="negotiation">
+    </div>
+  </div>
+  <div class="card text-center">
+    <div class="card-footer text-dark">
+      Sacheth Ranganathasetty Tenugondlu &#169;
+      <a href="https://validator.w3.org/#validate_by_uri">W3C Validator</a>
+
+</body>
+</html>

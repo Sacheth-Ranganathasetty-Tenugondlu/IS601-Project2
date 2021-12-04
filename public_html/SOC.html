@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Principles of OOPs</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* Timeline */
+
+        <div class="container">
+
+                                  /* Set a background color */
+
+                              </div>
+    </style>
+
+</head>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+<!-- Header -->
+
+<nav class="navbar navbar-expand-lg navbar-light .bg-light" style= "background-color: #e3f2fd;">
+    <div class="container-fluid">
+        <h3 class ="display-2">IS 601</h3>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link lead" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link lead" href="Team_Page.html">Team Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link lead" href="#">About Page</a>
+                </li>
+                <li class="nav-item dropdown lead">
+                    <a class="nav-link dropdown-toggle lead" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Internet History
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item lead" href="Video_1.html">Invention of Internet</a></li>
+                        <li><a class="dropdown-item lead" href="Video_2.html">Browser Wars</a></li>
+                        <li><a class="dropdown-item lead" href="Video_3.html">Internet search</a></li>
+                        <li><a class="dropdown-item lead" href="Video_4.html">Dot Com Bubble</a></li>
+                        <li><a class="dropdown-item lead" href="Video_5.html">People</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown lead">
+                    <a class="nav-link dropdown-toggle lead" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        OOPs
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item lead" href="OOP.html">Pylint & OOP Glossary</a></li>
+                        <li><a class="dropdown-item lead" href="AAAtest.html">AAA Testing</a></li>
+                        <li><a class="dropdown-item lead" href="Principles.html">Principles of OOP</a></li>
+                        <li><a class="dropdown-item lead" href="SOC.html">Separation of Concerns</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Body -->
+<body>
+<br>
+<div class="jumbotron text-center">
+    <h1 class="display-4">Separation Of Concerns</h1>
+    <p class="lead">Design principle for separating a computer program into distinct sections</p>
+
+</div>
+
+<div class="container">
+    <div class="row">
+
+        <p>Separation of concerns (SoC) is a design principle for separating a computer program into distinct sections. Each section addresses a separate concern, a set of information that affects the code of a computer program. A concern can be as general as "the details of the hardware for an application", or as specific as "the name of which class to instantiate". A program that embodies SoC well is called a modular program. Modularity, and hence separation of concerns, is achieved by encapsulating information inside a section of code that has a well-defined interface. Encapsulation is a means of information hiding.Layered designs in information systems are another embodiment of separation of concerns </p>
+
+    </div>
+    <div class="row">
+        <h3>Separation of Functions</h3>
+        <p>In the below example you can see that the operations are divided into different functions. This increases the readability of the program.</p>
+        <br><div class="text-center" style="width:35rem">
+
+            <img src="./img/soc12.png" class="card-img-top" width="200px" height="300px"
+                 alt="Load image">
+
+
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <h3>Separation of Things</h3>
+        <p>The previous section took a more functionally based approach to solve that particular problem, but we can apply this same principle in a more object-oriented approach. Again, note that we have separated all of the conceptually different functions which we must perform, and created a class to encapsulate them. Each class is concerned with a particular operation, such as printing the result to the console (via println()), validation logic, evaluation logic, and our primary function still coordinates the flow of data between these different things.</p>
+        <div class="text-center" style="width:35rem">
+
+            <img src="./img/Separationofcocern.png" class="card-img-top"
+                 alt="Load image">
+
+
+        </div>
+    </div>
+<br><br>
+    <div class=row">
+        <ul>
+            <li>The Separation of Concerns concept is used in the Calculator program in such a way that the class calculator is divided into separate classes like addition, subtraction, multiplication and division.</li>
+            <li>Class calculation has the declaration of the object and the variables and the class is used as a parameters to the other classes like addition, subtraction, multiplication and division.</li>
+            <li>Calculator_test is used to write the test cases for the calculator.</li>
+            <li>Main program is used to define the functions/methods for the operations of the calculator.</li>
+            <li>Addition Class is used to add the numbers and provide sum.</li>
+            <li>Subtraction Class is used to subtract the numbers and provide difference.</li>
+            <li>Multiplication Class is used to multiply the numbers and provide product.</li>
+            <li>Division Class is used to divide numbers and provide quotient. It also has divided by zero exception to avoid dividing by zero.</li>
+            <li>Calculator is the base class to print the results of the calculation.</li>
+        </ul>
+
+    </div>
+
+
+</div>
+
+
+
+
+<div class="card text-center">
+    <div class="card-footer text-dark">
+        Sacheth Ranganathasetty Tenugondlu &#169;
+        <a href="https://validator.w3.org/#validate_by_uri">W3C Validator</a>
+    </div>
+</div>
+</body>
+</html>
